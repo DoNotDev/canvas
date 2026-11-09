@@ -29,14 +29,13 @@ import type { FC } from 'react';
 
 import { Button, Card, Grid, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
-
 import {
   FractionBarActions,
   FractionBarPayloadSchema,
   type FractionBarPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Hard ceiling for the denominator. Matches

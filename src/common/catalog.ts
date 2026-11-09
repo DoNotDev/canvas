@@ -22,8 +22,8 @@ export type { ValidateResult } from '@donotdev/core';
 
 export type { CanvasCallerAccess, ValidateBlockOptions } from '@donotdev/core';
 
-import type { RegisteredWidget } from './types';
 import type { CanvasBlock } from './schemas';
+import type { RegisteredWidget } from './types';
 
 type ValidateBlockOptions = Parameters<typeof validateBlockBase>[1];
 

@@ -27,13 +27,13 @@ import type { FC } from 'react';
 
 import { Card, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   TextBlockActions,
   TextBlockPayloadSchema,
   type TextBlockPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Map the payload's `emphasis` to the body `Text`'s `variant` prop.
@@ -93,7 +93,7 @@ export const TextBlock: FC<CanvasWidgetProps> = (props) => {
         <Text
           /* Index-keyed because paragraphs are positional and the whole
              payload is replaced on every agent push — no reorder risk. */
-          // eslint-disable-next-line react/no-array-index-key
+
           key={index}
           as="p"
           variant={variant}

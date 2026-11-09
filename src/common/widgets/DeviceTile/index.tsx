@@ -20,14 +20,13 @@ import type { FC } from 'react';
 
 import { Card, Slider, Switch, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
-
 import {
   DeviceTileActions,
   DeviceTilePayloadSchema,
   type DeviceTilePayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * `DeviceTile` widget component.

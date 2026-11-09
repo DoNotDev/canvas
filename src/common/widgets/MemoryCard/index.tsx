@@ -24,13 +24,13 @@ import type { FC } from 'react';
 
 import { Alert, Button, ButtonGroup, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   MemoryCardActions,
   MemoryCardPayloadSchema,
   type MemoryCardPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Human-readable label for each storage scope. Keeps the body of the

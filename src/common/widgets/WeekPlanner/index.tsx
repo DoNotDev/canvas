@@ -22,13 +22,13 @@ import type { FC } from 'react';
 
 import { Button, Card, Grid, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   WeekPlannerActions,
   WeekPlannerPayloadSchema,
   type WeekPlannerPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /** Short weekday labels in display order starting from Monday = 1. */
 const DAY_LABELS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const;

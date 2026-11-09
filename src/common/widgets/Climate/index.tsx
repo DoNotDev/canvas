@@ -18,6 +18,8 @@
  * @author AMBROISE PARK Consulting
  */
 
+import type { ReactElement } from 'react';
+
 import {
   Button,
   ButtonGroup,
@@ -25,15 +27,14 @@ import {
   RangeInput,
   Text,
 } from '@donotdev/components';
-import type { ReactElement } from 'react';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   ClimateActions,
   ClimatePayloadSchema,
   type ClimatePayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /** Canonical ordering of the four thermostat modes in the UI. */
 const CLIMATE_MODES = ['heat', 'cool', 'auto', 'off'] as const;

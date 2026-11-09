@@ -31,13 +31,13 @@ import {
   type DescriptionItem,
 } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   EventDraftActions,
   EventDraftPayloadSchema,
   type EventDraftPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /** Lucide icon shown on the Card header. */
 const DRAFT_ICON = 'CalendarPlus';

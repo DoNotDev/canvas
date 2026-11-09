@@ -30,15 +30,14 @@ import type { FC, ReactElement } from 'react';
 
 import { Button, Card, Spinner, Stack, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
-
 import {
   ProgressCanvasActions,
   ProgressCanvasPayloadSchema,
   type ProgressCanvasPayload,
   type ProgressTick,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Glyph character for a tick's state column. Kept as plain Unicode so the

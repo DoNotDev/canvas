@@ -17,13 +17,13 @@
  * @author AMBROISE PARK Consulting
  */
 
-import { Button, ButtonGroup, Card, Text } from '@donotdev/components';
 import type { ReactElement } from 'react';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
+import { Button, ButtonGroup, Card, Text } from '@donotdev/components';
 
 import { AlarmActions, AlarmPayloadSchema, type AlarmPayload } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /** Lucide icon name shown on the Card header. */
 const ALARM_ICON = 'BellRing';

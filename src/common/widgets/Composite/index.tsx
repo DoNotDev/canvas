@@ -31,13 +31,9 @@
  */
 
 import { Fragment, type FC, type ReactNode } from 'react';
-
 import * as v from 'valibot';
 
 import { Grid, Stack } from '@donotdev/components';
-
-import { getWidget, registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 
 import {
   CompositeActions,
@@ -45,6 +41,8 @@ import {
   type CompositeChild,
   type CompositePayload,
 } from './schema';
+import { getWidget, registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Render a single child slot by resolving its `kind` against the catalog
@@ -67,7 +65,6 @@ function renderChild(
 ): ReactNode {
   const widget = getWidget(child.kind);
   if (!widget) {
-    // eslint-disable-next-line no-console
     console.warn(
       `[canvas] Composite: unknown child kind "${child.kind}" — skipped.`
     );
@@ -76,7 +73,6 @@ function renderChild(
 
   const parsed = v.safeParse(widget.schema, child.payload);
   if (!parsed.success) {
-    // eslint-disable-next-line no-console
     console.warn(
       `[canvas] Composite: payload for child "${child.id}" (${child.kind}) rejected — skipped.`
     );

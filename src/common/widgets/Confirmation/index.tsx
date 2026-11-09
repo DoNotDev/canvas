@@ -39,14 +39,13 @@ import {
   type ButtonVariant,
 } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
-
 import {
   ConfirmationActions,
   ConfirmationPayloadSchema,
   type ConfirmationPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Map the payload `severity` to the Confirm button's theme variant.

@@ -38,14 +38,13 @@ import {
 } from '@donotdev/components';
 import { useTranslation } from '@donotdev/core';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
-
 import {
   MailTriageActions,
   MailTriagePayloadSchema,
   type MailTriagePayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /** A flag value carried by `MailRow.flags`. */
 type MailFlag = 'important' | 'starred' | 'attachment' | 'calendar';

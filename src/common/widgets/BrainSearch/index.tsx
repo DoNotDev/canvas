@@ -28,14 +28,14 @@ import type { FC } from 'react';
 import { Card, Stack, Tag, Text } from '@donotdev/components';
 import { useTranslation } from '@donotdev/core';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   BrainSearchActions,
   BrainSearchPayloadSchema,
   type BrainResult,
   type BrainSearchPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Renders a single result row as a clickable `Card` with title, snippet,

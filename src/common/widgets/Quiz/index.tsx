@@ -31,10 +31,9 @@ import {
   Text,
 } from '@donotdev/components';
 
+import { QuizActions, QuizPayloadSchema, type QuizPayload } from './schema';
 import { registerWidget } from '../../catalog';
 import type { CanvasWidgetProps } from '../../types';
-
-import { QuizActions, QuizPayloadSchema, type QuizPayload } from './schema';
 
 /**
  * Compute the `Progress` value (0-100) for a quiz run.

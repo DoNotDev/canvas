@@ -23,15 +23,14 @@ import type { FC, MouseEvent } from 'react';
 
 import { Badge, Button, Card, Stack, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
-
 import {
   DayScheduleActions,
   DaySchedulePayloadSchema,
   type DaySchedulePayload,
   type ScheduleEvent,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Map an event `kind` to a `Badge` variant.

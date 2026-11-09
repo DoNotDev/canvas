@@ -26,14 +26,13 @@ import { useRef, type ReactElement } from 'react';
 
 import { Button, Card, Grid, Slider, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
-
 import {
   NumberLineActions,
   NumberLinePayloadSchema,
   type NumberLinePayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * `NumberLine` widget component.

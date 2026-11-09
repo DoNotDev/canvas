@@ -32,14 +32,13 @@ import {
   type StepperStep,
 } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
-
 import {
   ConceptExplainerActions,
   ConceptExplainerPayloadSchema,
   type ConceptExplainerPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * ConceptExplainer — step-by-step concept reveal with Prev / Next / Done

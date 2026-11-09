@@ -19,14 +19,14 @@ import type { FC } from 'react';
 
 import { Card, Grid, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   WeatherCardActions,
   WeatherCardPayloadSchema,
   type WeatherCardPayload,
   type WeatherSlot,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Map a closed-vocabulary `condition` to its lucide-react icon name.

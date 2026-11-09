@@ -20,13 +20,13 @@ import type { FC } from 'react';
 
 import { Button, ButtonGroup, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   ScenePickerActions,
   ScenePickerPayloadSchema,
   type ScenePickerPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * ScenePicker canvas widget component.

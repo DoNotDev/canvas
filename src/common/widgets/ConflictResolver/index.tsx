@@ -22,13 +22,13 @@ import type { FC } from 'react';
 
 import { Button, ButtonGroup, Card, Stack, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   ConflictResolverActions,
   ConflictResolverPayloadSchema,
   type ConflictResolverPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Map an event's optional `importance` hint to a `Text` theme variant for

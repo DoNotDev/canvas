@@ -20,15 +20,16 @@
  */
 
 import type { FC } from 'react';
+
 import { Avatar, Button, Card, Stack, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   MediaQueueActions,
   MediaQueuePayloadSchema,
   type MediaQueuePayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Initials fallback for `Avatar` when an item has no `coverUrl`. Uses

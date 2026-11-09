@@ -19,6 +19,7 @@
  */
 
 import type { FC } from 'react';
+
 import {
   Avatar,
   Button,
@@ -28,13 +29,13 @@ import {
   Text,
 } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   NowPlayingActions,
   NowPlayingPayloadSchema,
   type NowPlayingPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Initials fallback for `Avatar` when `coverUrl` is absent. Uses the

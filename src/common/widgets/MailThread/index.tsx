@@ -34,14 +34,14 @@ import {
   Text,
 } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   MailThreadActions,
   MailThreadPayloadSchema,
   type MailMessage,
   type MailThreadPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Compute a two-letter initials fallback for the `Avatar` of a sender

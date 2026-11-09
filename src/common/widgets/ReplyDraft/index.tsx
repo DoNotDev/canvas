@@ -35,13 +35,13 @@ import {
   Textarea,
 } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   ReplyDraftActions,
   ReplyDraftPayloadSchema,
   type ReplyDraftPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /** Lucide icon shown on the Card header. */
 const DRAFT_ICON = 'MailPlus';

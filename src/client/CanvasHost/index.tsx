@@ -79,7 +79,6 @@ function renderBlock(
 ): ReactElement | null {
   const result = validateBlock(block);
   if (!result.ok) {
-    // eslint-disable-next-line no-console
     console.warn(`[canvas] dropped block "${block.id}": ${result.reason}`);
     return null;
   }
@@ -90,7 +89,6 @@ function renderBlock(
       widget.kind
     );
     if (!eventResult.ok) {
-      // eslint-disable-next-line no-console
       console.warn(
         `[canvas] dropped event from "${value.id}" (${widget.kind}.${action}): ${eventResult.reason}`
       );

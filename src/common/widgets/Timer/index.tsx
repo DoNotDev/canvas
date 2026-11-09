@@ -25,10 +25,9 @@ import type { FC } from 'react';
 
 import { Button, Progress, Stack, Text } from '@donotdev/components';
 
+import { TimerActions, TimerPayloadSchema, type TimerPayload } from './schema';
 import { registerWidget } from '../../catalog';
 import type { CanvasWidgetProps } from '../../types';
-
-import { TimerActions, TimerPayloadSchema, type TimerPayload } from './schema';
 
 /**
  * Format a non-negative seconds count as a zero-padded `MM:SS` string.

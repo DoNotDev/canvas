@@ -1,6 +1,6 @@
 {
   "name": "@donotdev/canvas",
-  "version": "0.1.44",
+  "version": "0.2.0",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -21,19 +21,19 @@
   },
   "dependencies": {
     "@donotdev/core": "workspace:*",
-    "valibot": "^1.2.0"
+    "valibot": "^1.5.0"
   },
   "peerDependencies": {
     "@donotdev/components": "workspace:*",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@donotdev/components": "workspace:*",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "19.2.3",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "files": [
     "dist",

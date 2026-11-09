@@ -26,13 +26,13 @@ import type { FC } from 'react';
 
 import { Button, ButtonGroup, Card, Tag, Text } from '@donotdev/components';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
 import {
   BrainCardActions,
   BrainCardPayloadSchema,
   type BrainCardPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Format an ISO-8601 timestamp as a short UTC date (`YYYY-MM-DD`).

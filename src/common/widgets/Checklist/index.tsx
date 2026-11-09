@@ -24,14 +24,13 @@ import type { FC } from 'react';
 import { Button, Card, Checkbox, Stack, Text } from '@donotdev/components';
 import { useTranslation } from '@donotdev/core';
 
-import { registerWidget } from '../../catalog';
-import type { CanvasWidgetProps } from '../../types';
-
 import {
   ChecklistActions,
   ChecklistPayloadSchema,
   type ChecklistPayload,
 } from './schema';
+import { registerWidget } from '../../catalog';
+import type { CanvasWidgetProps } from '../../types';
 
 /**
  * Placeholder text emitted by the add affordance. Widgets avoid controlled
