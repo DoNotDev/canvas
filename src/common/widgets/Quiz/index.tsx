@@ -83,6 +83,7 @@ function progressPercent(turnIndex: number, turnCount: number): number {
  * @since 0.0.1
  */
 export const Quiz: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as QuizPayload;
 
   const items = data.choices.map((choice) => ({

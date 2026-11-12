@@ -195,6 +195,7 @@ function renderReceivedCell(_: unknown, row: MailRow): ReactElement {
  * @since 0.0.1
  */
 export const MailTriage: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as MailTriagePayload;
   const { t } = useTranslation('dndev');
 

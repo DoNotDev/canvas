@@ -116,6 +116,7 @@ function formatHour(hour: number): string {
  * @since 0.0.1
  */
 export const WeekPlanner: FC<CanvasWidgetProps> = (props) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const payload = props.payload as WeekPlannerPayload;
   const { emit } = props;
   const { weekStartISO, slots, hourRange } = payload;

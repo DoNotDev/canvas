@@ -80,6 +80,7 @@ const DENOMINATOR_FLOOR = 1;
  * @since 0.0.1
  */
 export const FractionBar: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as FractionBarPayload;
 
   const denominatorCap = data.maxDenominator ?? DENOMINATOR_CEILING;

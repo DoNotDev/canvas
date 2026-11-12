@@ -83,6 +83,7 @@ const TEXTAREA_ROWS = 8;
  * @since 0.0.1
  */
 export const ReplyDraft: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const draft = payload as ReplyDraftPayload;
   const subtitle = `To: ${draft.to.join(', ')}`;
 

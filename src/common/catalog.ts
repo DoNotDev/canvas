@@ -61,6 +61,7 @@ export function validateBlock(
 ): ValidateBlockResult {
   const result = validateBlockBase(block, options);
   if (!result.ok) return result;
+  // why: core registry is framework-agnostic; widgets registered here are React-typed (single narrowing point)
   return {
     ok: true,
     value: result.value as CanvasBlock,
@@ -76,5 +77,6 @@ export function validateBlock(
  * @since 0.1.1
  */
 export function getWidget(kind: string): RegisteredWidget | undefined {
+  // why: same core→React registry narrowing as validateBlock
   return getWidgetBase(kind) as RegisteredWidget | undefined;
 }

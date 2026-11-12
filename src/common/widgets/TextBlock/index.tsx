@@ -81,6 +81,7 @@ function emphasisToVariant(
  * @since 0.0.1
  */
 export const TextBlock: FC<CanvasWidgetProps> = (props) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const payload = props.payload as TextBlockPayload;
   const { text, title, emphasis } = payload;
 

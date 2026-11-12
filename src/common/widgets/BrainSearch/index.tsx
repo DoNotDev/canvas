@@ -93,6 +93,7 @@ const ResultRow: FC<{
  * @since 0.0.1
  */
 export const BrainSearch: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const search = payload as BrainSearchPayload;
   const resultCount = search.results.length;
   const { t } = useTranslation('dndev');

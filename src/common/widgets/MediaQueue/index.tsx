@@ -72,6 +72,7 @@ function coverFallback(title: string, artist: string): string {
  * @since 0.0.1
  */
 export const MediaQueue: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as MediaQueuePayload;
   const total = data.items.length;
 

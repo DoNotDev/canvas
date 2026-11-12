@@ -110,6 +110,7 @@ function progressVariantFor(
  * @since 0.0.1
  */
 export const Timer: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as TimerPayload;
 
   const handlePause = (): void => {

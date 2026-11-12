@@ -57,6 +57,7 @@ import type { CanvasWidgetProps } from '../../types';
  * @since 0.0.1
  */
 const RoomOverview = (props: CanvasWidgetProps) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const p = props.payload as RoomOverviewPayload;
   const { emit } = props;
 

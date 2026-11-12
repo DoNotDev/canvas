@@ -76,6 +76,7 @@ function coverFallback(payload: NowPlayingPayload): string {
  * @since 0.0.1
  */
 export const NowPlaying: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as NowPlayingPayload;
 
   const onSeek = (values: number[]): void => {

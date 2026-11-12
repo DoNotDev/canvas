@@ -85,7 +85,7 @@ function renderChild(
     // object so we don't clobber primitives or arrays.
     const tagged =
       payload !== null && typeof payload === 'object' && !Array.isArray(payload)
-        ? { ...(payload as Record<string, unknown>), childId: child.id }
+        ? { ...payload, childId: child.id }
         : { childId: child.id, value: payload };
     emit(action, tagged);
   };
@@ -121,6 +121,7 @@ function renderChild(
  * @since 0.0.1
  */
 export const Composite: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as CompositePayload;
   const { layout, children, cols } = data;
 

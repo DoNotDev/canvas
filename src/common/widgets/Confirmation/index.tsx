@@ -122,6 +122,7 @@ const ALERT_VARIANT: Record<
  * @since 0.0.1
  */
 export const Confirmation: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as ConfirmationPayload;
   const severity = data.severity ?? 'info';
   const confirmLabel = data.confirmLabel ?? 'Confirm';

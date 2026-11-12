@@ -129,6 +129,7 @@ function formatDay(timeISO: string): string {
  * @since 0.0.1
  */
 export const WeatherCard: FC<CanvasWidgetProps> = (props) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const payload = props.payload as WeatherCardPayload;
   const { location, current, hourly, daily, unit } = payload;
 

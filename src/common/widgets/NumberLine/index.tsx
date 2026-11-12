@@ -70,6 +70,7 @@ import type { CanvasWidgetProps } from '../../types';
  * @since 0.0.1
  */
 export function NumberLine(props: CanvasWidgetProps): ReactElement {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const payload = props.payload as NumberLinePayload;
   const { lineId, prompt, min, max, step, value, targets, showTicks } = payload;
 

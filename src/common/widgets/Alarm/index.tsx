@@ -59,6 +59,7 @@ const SNOOZE_MINUTES = 5;
  * @since 0.0.1
  */
 export function Alarm(props: CanvasWidgetProps): ReactElement {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const payload = props.payload as AlarmPayload;
   const { alarmId, label, triggerISO, state } = payload;
 

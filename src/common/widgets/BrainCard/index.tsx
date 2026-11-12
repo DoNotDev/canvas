@@ -80,6 +80,7 @@ function formatCreatedDate(createdISO: string): string {
  * @since 0.0.1
  */
 export const BrainCard: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const entry = payload as BrainCardPayload;
   const subtitle = entry.createdISO
     ? formatCreatedDate(entry.createdISO)

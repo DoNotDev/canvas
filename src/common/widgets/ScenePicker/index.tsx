@@ -45,6 +45,7 @@ import type { CanvasWidgetProps } from '../../types';
  * @since 0.0.1
  */
 export const ScenePicker: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const { title, scenes } = payload as ScenePickerPayload;
 
   return (

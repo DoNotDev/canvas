@@ -154,6 +154,7 @@ function TickRow({ tick }: { readonly tick: ProgressTick }): ReactElement {
  * @since 0.0.1
  */
 export const ProgressCanvas: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as ProgressCanvasPayload;
   const isRunning = data.status === 'running';
   const showCancel = isRunning && data.cancellable === true;

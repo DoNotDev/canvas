@@ -131,6 +131,7 @@ function timeRangeLabel(event: ScheduleEvent): string {
  * @since 0.0.1
  */
 export const DaySchedule: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as DaySchedulePayload;
 
   return (

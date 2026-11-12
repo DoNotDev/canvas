@@ -69,6 +69,7 @@ const SCOPE_LABELS: Record<MemoryCardPayload['scope'], string> = {
  * @since 0.0.1
  */
 export const MemoryCard: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const memory = payload as MemoryCardPayload;
   const scopeLabel = SCOPE_LABELS[memory.scope];
   const hasTags = memory.tags !== undefined && memory.tags.length > 0;

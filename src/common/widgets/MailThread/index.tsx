@@ -142,6 +142,7 @@ const MessageRow: FC<{ message: MailMessage }> = ({ message }) => {
  * @since 0.0.1
  */
 export const MailThread: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const thread = payload as MailThreadPayload;
 
   return (

@@ -45,6 +45,7 @@ import type { CanvasWidgetProps } from '../../types';
  * @since 0.0.1
  */
 export const DeviceTile: FC<CanvasWidgetProps> = (props) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const p = props.payload as DeviceTilePayload;
 
   const handlePower = (next: boolean): void => {

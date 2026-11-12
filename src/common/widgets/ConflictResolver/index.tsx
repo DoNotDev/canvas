@@ -132,6 +132,7 @@ function formatRange(startISO: string, endISO: string): string {
  * @since 0.0.1
  */
 export const ConflictResolver: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const { conflictId, message, events } = payload as ConflictResolverPayload;
 
   return (

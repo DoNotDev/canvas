@@ -111,6 +111,7 @@ function buildItems(payload: EventDraftPayload): DescriptionItem[] {
  * @since 0.0.1
  */
 export const EventDraft: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const draft = payload as EventDraftPayload;
   const items = buildItems(draft);
   const subtitle = draft.calendarId

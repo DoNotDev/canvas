@@ -91,6 +91,7 @@ const MODE_LABELS: Record<(typeof CLIMATE_MODES)[number], string> = {
  * @since 0.0.1
  */
 export function Climate(props: CanvasWidgetProps): ReactElement {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const payload = props.payload as ClimatePayload;
   const {
     zoneId,

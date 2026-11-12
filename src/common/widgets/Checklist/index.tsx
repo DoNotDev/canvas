@@ -70,6 +70,7 @@ const ADD_ITEM_PLACEHOLDER = '(new item)';
  * @since 0.0.1
  */
 export const Checklist: FC<CanvasWidgetProps> = ({ payload, emit }) => {
+  // why: payload is valibot-validated against this widget's schema (validateBlock) before render
   const data = payload as ChecklistPayload;
   const { t } = useTranslation('dndev');
 
